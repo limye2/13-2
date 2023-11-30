@@ -1,0 +1,36 @@
+//
+//  main.c
+//  13-2
+//
+//  Created by MacBook Air on 2023/11/30.
+//
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+struct point {
+    int x;
+    int y;
+};
+int main(void){
+    //instance tjsdjs
+    struct point p1, p2;
+    int xdiff, ydiff;
+    double dist;
+    
+    printf("input p1 coordinate (x y) : ");
+    scanf("%d %d", &p1.x, &p2.y);
+    
+    printf("input p1 coordinate (x y) : ");
+    scanf("%d %d", &p2.x, &p2.y);
+    
+    //distance
+    xdiff = p2.x - p1.x;
+    ydiff = p2.y - p1.y;
+    dist = sqrt(xdiff*xdiff + ydiff*ydiff);
+    
+    printf("distance : %f\n", dist);
+    
+    return 0;
+}
